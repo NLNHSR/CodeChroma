@@ -4,6 +4,7 @@
   "description": "Dynamic Diagnostic Reflection for Your VS Code Environment.",
   "publisher": "neelshettigar",
   "version": "0.1.0",
+  "icon": "logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/NLNHSR/CodeChroma.git"
