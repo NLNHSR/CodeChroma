@@ -53,18 +53,18 @@ function changeEditorBackgroundColor(color) {
         "statusBar.background": color,
         "statusBar.noFolderBackground": color
     }, vscode.ConfigurationTarget.Global).then(() => {
-        vscode.window.showInformationMessage('Editor background color changed!');
+        //vscode.window.showInformationMessage('Editor background color changed!');
     }, (error) => {
-        vscode.window.showErrorMessage('Failed to change editor background color: ' + error);
+        //vscode.window.showErrorMessage('Failed to change editor background color: ' + error);
     });
 }
 
 function resetWorkspaceColors() {
     const config = vscode.workspace.getConfiguration();
     config.update('workbench.colorCustomizations', {}, vscode.ConfigurationTarget.Global).then(() => {
-        vscode.window.showInformationMessage('Workspace colors reset to default!');
+        // vscode.window.showInformationMessage('Workspace colors reset to default!');
     }, (error) => {
-        vscode.window.showErrorMessage('Failed to reset workspace colors: ' + error);
+        // vscode.window.showErrorMessage('Failed to reset workspace colors: ' + error);
     });
 }
 
